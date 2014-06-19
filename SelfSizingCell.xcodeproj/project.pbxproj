@@ -13,6 +13,9 @@
 		DD7DCE521952FC2F00C52671 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD7DCE501952FC2F00C52671 /* Main.storyboard */; };
 		DD7DCE541952FC2F00C52671 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD7DCE531952FC2F00C52671 /* Images.xcassets */; };
 		DD7DCE601952FC2F00C52671 /* SelfSizingCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7DCE5F1952FC2F00C52671 /* SelfSizingCellTests.m */; };
+		DD7DCE6B1952FD3D00C52671 /* Quote.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7DCE6A1952FD3D00C52671 /* Quote.m */; };
+		DD7DCE6E1952FE1F00C52671 /* QuoteFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7DCE6D1952FE1F00C52671 /* QuoteFactory.m */; };
+		DD7DCE711953008400C52671 /* QuoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7DCE701953008400C52671 /* QuoteCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,12 @@
 		DD7DCE591952FC2F00C52671 /* SelfSizingCellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelfSizingCellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7DCE5E1952FC2F00C52671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD7DCE5F1952FC2F00C52671 /* SelfSizingCellTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelfSizingCellTests.m; sourceTree = "<group>"; };
+		DD7DCE691952FD3D00C52671 /* Quote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quote.h; sourceTree = "<group>"; };
+		DD7DCE6A1952FD3D00C52671 /* Quote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quote.m; sourceTree = "<group>"; };
+		DD7DCE6C1952FE1F00C52671 /* QuoteFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuoteFactory.h; sourceTree = "<group>"; };
+		DD7DCE6D1952FE1F00C52671 /* QuoteFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuoteFactory.m; sourceTree = "<group>"; };
+		DD7DCE6F1953008400C52671 /* QuoteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuoteCell.h; sourceTree = "<group>"; };
+		DD7DCE701953008400C52671 /* QuoteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuoteCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +92,12 @@
 				DD7DCE4B1952FC2F00C52671 /* AppDelegate.m */,
 				DD7DCE4D1952FC2F00C52671 /* ViewController.h */,
 				DD7DCE4E1952FC2F00C52671 /* ViewController.m */,
+				DD7DCE6F1953008400C52671 /* QuoteCell.h */,
+				DD7DCE701953008400C52671 /* QuoteCell.m */,
+				DD7DCE6C1952FE1F00C52671 /* QuoteFactory.h */,
+				DD7DCE6D1952FE1F00C52671 /* QuoteFactory.m */,
+				DD7DCE691952FD3D00C52671 /* Quote.h */,
+				DD7DCE6A1952FD3D00C52671 /* Quote.m */,
 				DD7DCE501952FC2F00C52671 /* Main.storyboard */,
 				DD7DCE531952FC2F00C52671 /* Images.xcassets */,
 				DD7DCE461952FC2F00C52671 /* Supporting Files */,
@@ -215,9 +230,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7DCE6B1952FD3D00C52671 /* Quote.m in Sources */,
 				DD7DCE4F1952FC2F00C52671 /* ViewController.m in Sources */,
 				DD7DCE4C1952FC2F00C52671 /* AppDelegate.m in Sources */,
 				DD7DCE491952FC2F00C52671 /* main.m in Sources */,
+				DD7DCE711953008400C52671 /* QuoteCell.m in Sources */,
+				DD7DCE6E1952FE1F00C52671 /* QuoteFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

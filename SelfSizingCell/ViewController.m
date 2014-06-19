@@ -7,9 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "QuoteCell.h"
+#import "QuoteFactory.h"
 
-@interface ViewController ()
-            
+@interface ViewController () <UITableViewDataSource>
+
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) NSArray *quotes;
 
 @end
 
@@ -17,12 +21,27 @@
             
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.quotes = [QuoteFactory generateQuotes];
+    
+    self.tableView.estimatedRowHeight = 80.0;
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.quotes.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString * const CellIdentifier = @"QuoteCell";
+    
+    QuoteCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier
+                                                            forIndexPath:indexPath];
+    [cell configureCellWithQuote:self.quotes[indexPath.row]];
+    
+    return cell;
 }
 
 @end
